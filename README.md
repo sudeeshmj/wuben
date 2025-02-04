@@ -22,10 +22,33 @@ This is a simple e-commerce platform built using Laravel and Laravel Sanctum for
 - Git
 - Postman (or any API testing tool)
 
-### Steps to Install
+## Installation
 
-1. **Clone the repository**
-   ```sh
-   git clone <repository-url>
-   cd e-commerce-api
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/sudeeshmj/wuben.git
+   cd webaune
+   ```
+
+2. Install dependencies:
+   ```bash
+   composer install
+   ```
+
+3. Set up the environment variables:
+   - Copy `.env.example` to `.env`:
+     ```bash
+     copy .env.example .env
+     ```
+   - Update the `.env` file with database credentials.
+
+4. Generate key:
+   ```bash
+   php artisan key:generate
+   ```
+
+5. Start the development server:
+   ```bash
+   php artisan serve
+   ```
 
